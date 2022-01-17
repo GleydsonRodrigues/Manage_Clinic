@@ -15,7 +15,6 @@ input {
     width: 100%;
     background-image: linear-gradient(to right, rgba(4, 0, 255, 0.288), rgba(76, 0, 255, 0.151));
     min-height: 100vh;
-    overflow: hidden;
 }
 
 .forms-container {

@@ -6,7 +6,7 @@
 <html lang="pt-br">
 <head>
     <meta charset="utf-8"/>
-    <title>CADASTRO</title>
+    <title>Cadastro</title>
     <Link rel="stylesheet" href="CSS/index.css">
 </head>
 <body>
@@ -31,6 +31,7 @@ if(isset($_POST['nome']))
     $email = addslashes($_POST['email']);
     $senha = addslashes($_POST['senha']);
     $confirmarSenha = addslashes($_POST['confSenha']);
+    $tipo =addslashes($_POST['check']);
     //verificar se esta preenchido
     if(!empty($nome) && !empty($rg) && !empty($email) && !empty($senha) && !empty($confirmarSenha))
     {
@@ -39,7 +40,7 @@ if(isset($_POST['nome']))
         {
             if($senha == $confirmarSenha)
             {
-                if($u->cadastrar($nome,$rg,$email,$senha))
+                if($u->cadastrar($nome,$rg,$email,$senha,$tipo))
                 {
                     ?>
                     <div id="msg-sucesso">
