@@ -16,7 +16,7 @@ $u = new Usuario;
 
 
     <link rel="stylesheet" href="CSS/login.css" />
-    <title>TESTE TCC</title>
+    <title>Manage Clinic</title>
 </head>
 
 <body>

@@ -11,7 +11,7 @@
 </head>
 <body>
 <div id="corpo-form-cad">
-    <h1>CADASTRE-SE</h1>
+    <h1>Cadastre-se</h1>
     <form method="POST">
         <input type="text" name="nome" placeholder="Nome Completo" maxlength="30">
         <input type="number" name="rg" placeholder="CPF" maxlength="30">
