@@ -1,0 +1,321 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-image: linear-gradient(to right, #121120, #2f2a61);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    border-top: 2px solid #e14eca;
+}
+
+div#parallelogram {
+    background-image: linear-gradient(to right, #201d36, #3a3568);
+    width: 1200px;
+    height: 700px;
+    max-width: 70vw;
+    border-radius: 10px;
+    box-shadow: 5px 5px 8px 2px;
+    transform: skew(6deg, 3deg);
+    position: absolute;
+    z-index: -1;
+}
+
+section {
+    display: flex;
+    background: #fff;
+    padding: 30px 5px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px;
+    max-width: 70vw;
+    border-left: 4px solid #ff00d9;
+    border-right: 4px solid #ff00d9;
+}
+
+section h1 {
+    padding: 20px 10px;
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+fieldset {
+    border: none;
+}
+
+
+/* Nome Completo */
+
+fieldset:nth-child(2) {
+    display: flex;
+}
+
+
+/* Nome Pai e Mãe */
+
+fieldset:nth-child(3) {
+    display: flex;
+}
+
+
+/* E-mail */
+
+fieldset:nth-child(4) {
+    display: flex;
+}
+
+
+/* Telefone e CPF */
+
+fieldset:nth-child(5) {
+    display: flex;
+}
+
+
+/* Peso, Altura e Sexo */
+
+fieldset:nth-child(6) {
+    display: flex;
+}
+
+
+/* Endereço */
+
+fieldset:nth-child(7) {
+    display: flex;
+}
+
+
+/* N° , Cidade e Estado */
+
+fieldset:nth-child(8) {
+    display: flex;
+}
+
+
+/* Sangue e Nascimento */
+
+fieldset:nth-child(9) {
+    display: flex;
+    padding-bottom: 20px;
+}
+
+.input-field {
+    width: 100%;
+    background-color: #352a751e;
+    margin: 12px 10px;
+    height: 75px;
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: 50px 80%;
+    padding: 0 0.4rem;
+    position: relative;
+    border-color: #3498db;
+    color: #fff;
+    box-shadow: 0 0 40px 40px rgba(89, 0, 255, 0.020) inset, 0 0 0 0 rgba(43, 5, 116, 0.247);
+    -webkit-transition: all 150ms ease-in-out;
+    transition: all 150ms ease-in-out;
+    position: relative;
+}
+
+.input-field input {
+    background: none;
+    outline: none;
+    border: none;
+    line-height: 1;
+    font-weight: bold;
+    font-size: 16px;
+    color: #616060;
+    padding-top: 13px;
+}
+
+.input-field label {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+    color: #969494;
+    position: absolute;
+    line-height: 60px;
+    top: 8px;
+    left: 60px;
+    user-select: none;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.input-field input:focus~label,
+.input-field input:valid~label {
+    top: -12px;
+    color: rgb(78, 21, 182);
+}
+
+.input-field:hover {
+    box-shadow: 0 0 10px 0 rgba(89, 0, 255, 0.020) inset, 0 0 10px 4px #11101db9;
+}
+
+.input-field i {
+    padding-left: 20px;
+    line-height: 78px;
+    color: rgb(58, 16, 136);
+    transition: 0.5s;
+    font-size: 20px;
+}
+
+#submit {
+    background-image: linear-gradient(to right, rgb(0, 92, 197), rgb(90, 20, 220));
+    width: 80%;
+    border: none;
+    padding: 15px;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 10px;
+    font-weight: bold;
+    margin-left: 10%;
+}
+
+#submit:hover {
+    background-image: linear-gradient(to right, rgb(0, 80, 172), rgb(80, 19, 195));
+}
+
+#voltar {
+    background-image: linear-gradient(to right, rgb(0, 92, 197), rgb(90, 20, 220));
+    width: 20%;
+    height: 35px;
+    border: none;
+    padding: 5px;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-top: 6px;
+    margin-left: 40%;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px transparent;
+    position: relative;
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+}
+
+#voltar:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to right, #e14eca 0%, #000000 100%);
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: 0 50%;
+    transform-origin: 0 50%;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.9s;
+    transition-duration: 0.9s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+    border-radius: 10px;
+}
+
+#voltar:hover,
+#voltar:focus,
+#voltar:active {
+    color: #ffffff;
+    border-radius: 10px;
+}
+
+#voltar:hover:before,
+#voltar:focus:before,
+#voltar:active:before {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+    border-radius: 10px;
+}
+
+@media only screen and (max-width: 1080px) {
+    div#parallelogram {
+        height: 690px;
+    }
+    section img {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 510px) {
+    div#parallelogram {
+        display: none;
+    }
+    section {
+        min-width: 95vw;
+    }
+    form {
+        width: 100%;
+    }
+    fieldset:nth-child(2),
+    fieldset:nth-child(4),
+    fieldset:nth-child(5) {
+        flex-direction: column;
+    }
+    fieldset:nth-child(4) {
+        padding: 0px;
+    }
+    div#check {
+        width: 100%;
+    }
+    button {
+        width: 100%;
+        margin-left: 0;
+    }
+}
+
+#msgsucesso {
+    font-size: 20px;
+    padding-top: 25px;
+    position: absolute;
+    top: 2px;
+    max-height: 80px;
+    height: 80px;
+    max-width: 100vw;
+    width: 100vw;
+    text-align: center;
+}
+
+#msgerro {
+    font-size: 20px;
+    padding-top: 25px;
+    position: absolute;
+    top: 2px;
+    max-height: 80px;
+    height: 80px;
+    max-width: 100vw;
+    width: 100vw;
+    text-align: center;
+}
+
+#txtsexo {
+    background: none;
+    border: none;
+    font-size: 17px;
+    font-weight: 600;
+    color: #969494;
+}
+
+#txtnascimento {
+    font-size: 18px;
+    font-family: sans-serif;
+    margin: 3px 19px 19px 19px;
+    color: #969494;
+}

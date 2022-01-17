@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title> LOCALIZAÇÃO </title>
+    <link rel="stylesheet" href="CSS/sidebar.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+    <div class="sidebar">
+        <div class="logo-details">
+            <i class='bx bx-plus-medical icon'></i>
+            <div class="logo_name">SUS</div>
+            <i class='bx bx-menu' id="btn"></i>
+        </div>
+
+        <br><br><br><br><br><br><br>
+
+        <ul class="nav-list">
+
+            <li>
+                <a href="dashboard.html">
+                    <i class='bx bx-grid-alt'></i>
+                    <span class="links_name">Dashboard</span>
+                </a>
+                <span class="tooltip">Dashboard</span>
+            </li>
+
+            <br>
+
+            <li>
+                <a href="pacientes.php">
+                    <i class='bx bx-user'></i>
+                    <span class="links_name">Pacientes</span>
+                </a>
+                <span class="tooltip">Pacientes</span>
+            </li>
+
+            <br>
+
+            <li>
+                <a href="calendario.html">
+                    <i class='bx bxs-calendar'></i>
+                    <span class="links_name">Agenda</span>
+                </a>
+                <span class="tooltip">Agenda</span>
+            </li>
+
+            <br>
+
+            <li>
+                <a href="mapa.html">
+                    <i class='bx bxs-map'></i>
+                    <span class="links_name">Google Maps</span>
+                </a>
+                <span class="tooltip">Localidade</span>
+            </li>
+
+            <br><br><br><br><br><br><br><br><br><br><br><br>
+
+            <li>
+                <a href="sair.php" id="link_out">
+                    <i class='bx bx-log-out'></i>
+                    <span class="links_name">Desconectar</span>
+                </a>
+                <span class="tooltip">Desconectar</span>
+            </li>
+        </ul>
+    </div>
+
+    <section class="mapa-section">
+        <div class="main-content">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3953.0953191360186!2d-48.903718508991254!3d-20.741668452050977!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x8eaa68266ffdf4db!2sUPA!5e0!3m2!1spt-BR!2sbr!4v1627096744237!5m2!1spt-BR!2sbr"
+                width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </section>
+
+    <script src="JAVA/sidebar.js"></script>
+
+</body>
+
+</html>
